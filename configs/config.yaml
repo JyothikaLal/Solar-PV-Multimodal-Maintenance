@@ -1,0 +1,20 @@
+project:
+  name: solar-pv-multimodal-maintenance
+  version: "0.1.0"
+
+data:
+  tecnalia:
+    raw_dir: data/raw/tecnalia
+    interim_dir: data/interim/tecnalia
+    processed_dir: data/processed/tecnalia
+
+  raptormaps:
+    raw_dir: data/raw/raptormaps
+    interim_dir: data/interim/raptormaps
+    processed_dir: data/processed/raptormaps
+
+reproducibility:
+  seed: 42
+
+runtime:
+  device: auto

@@ -1,0 +1,7 @@
+-r requirements.txt
+
+# Development and testing
+pytest
+pytest-cov
+ipykernel
+jupyter

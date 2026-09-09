@@ -1,0 +1,42 @@
+# Core data and scientific computing
+numpy
+pandas
+scipy
+
+# Classical machine learning
+scikit-learn
+
+# Visualization
+matplotlib
+seaborn
+
+# Computer vision
+opencv-python
+Pillow
+
+# Deep learning
+torch
+torchvision
+
+# Explainability
+shap
+grad-cam
+
+# Configuration and utilities
+PyYAML
+python-dotenv
+tqdm
+joblib
+
+# API and deployment
+fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings
+
+# Experiment tracking / MLOps
+mlflow
+
+# Testing
+pytest
+pytest-cov
