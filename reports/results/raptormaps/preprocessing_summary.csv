@@ -1,0 +1,2 @@
+image_count,unique_widths,unique_heights,unique_modes,modes,width,height,tensor_channels,tensor_height,tensor_width,global_min_pixel,global_max_pixel,native_aspect_ratio,recommended_scaling,per_image_normalization,native_resolution_preserved
+20000,1,1,1,L,24,40,1,40,24,0.0,255.0,1.6667,divide_by_255,False,True

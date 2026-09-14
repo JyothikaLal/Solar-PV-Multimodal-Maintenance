@@ -1,0 +1,13 @@
+anomaly_class,total_count,percentage,train,validation,test,ratio_vs_largest_class,ratio_vs_no_anomaly,minority_class
+No-Anomaly,10000,50.0,7000,1500,1500,1.0,1.0,False
+Cell,1877,9.385,1313,281,282,0.1877,0.1877,False
+Vegetation,1639,8.195,1147,246,246,0.1639,0.1639,False
+Diode,1499,7.495,1049,224,225,0.1499,0.1499,False
+Cell-Multi,1288,6.44,900,193,193,0.1288,0.1288,False
+Shadowing,1056,5.28,739,158,159,0.1056,0.1056,False
+Cracking,940,4.7,656,141,140,0.094,0.094,False
+Offline-Module,827,4.135,577,123,123,0.0827,0.0827,False
+Hot-Spot,249,1.245,174,37,37,0.0249,0.0249,True
+Hot-Spot-Multi,246,1.23,172,37,37,0.0246,0.0246,True
+Soiling,204,1.02,143,31,30,0.0204,0.0204,True
+Diode-Multi,175,0.875,122,26,27,0.0175,0.0175,True

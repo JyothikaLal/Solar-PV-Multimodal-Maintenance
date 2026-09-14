@@ -99,3 +99,7 @@ htmlcov/
 *.tmp
 *.temp
 *.swp
+
+# Personal task completion documents (kept locally, not committed)
+docs/data/TASK_11_TECNALIA_EDA_COMPLETE_DOCUMENTATION.docx
+docs/data/TASK_12_RAPTORMAPS_EDA_COMPLETE_DOCUMENTATION.docx

@@ -1,0 +1,13 @@
+anomaly_class,image_count,percentage
+No-Anomaly,10000,50.0
+Cell,1877,9.385
+Vegetation,1639,8.195
+Diode,1499,7.495
+Cell-Multi,1288,6.44
+Shadowing,1056,5.28
+Cracking,940,4.7
+Offline-Module,827,4.135
+Hot-Spot,249,1.245
+Hot-Spot-Multi,246,1.23
+Soiling,204,1.02
+Diode-Multi,175,0.875
