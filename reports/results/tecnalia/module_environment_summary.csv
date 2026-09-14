@@ -1,0 +1,8 @@
+,Front GPOA (W/m²),Front GPOA (W/m²),Front GPOA (W/m²),Temp. Mod (°C),Temp. Mod (°C),Temp. Mod (°C),normalized_pmpp,normalized_pmpp,normalized_pmpp
+,mean,median,std,mean,median,std,mean,median,std
+module,,,,,,,,,
+Atersa,152.413,7.0,266.8351,18.3168,14.75,12.8882,0.1282,0.0018,0.2294
+JaSolar3,152.413,7.0,266.8351,16.7234,14.5,83.7856,0.1401,0.0024,0.2466
+NingboSolar,152.413,7.0,266.8351,18.4613,14.75,12.7446,0.1299,0.0014,0.2292
+Photowatt,152.413,7.0,266.8351,17.725,14.5,11.6199,0.0858,0.0005,0.1587
+TrinaSolar,152.413,7.0,266.8351,18.3853,14.75,12.7768,0.1207,0.002,0.212
