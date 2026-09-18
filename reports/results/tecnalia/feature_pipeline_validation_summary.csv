@@ -1,0 +1,6 @@
+module_name,input_rows,output_rows,input_columns,output_columns,new_feature_count,missing_feature_values,timestamp_start,timestamp_end,duplicate_timestamps
+Atersa,51921,51921,27,85,58,79989,2024-11-01,2025-07-30 11:30:00,0
+JaSolar3,51921,51921,27,85,58,85227,2024-11-01,2025-07-30 11:30:00,0
+NingboSolar,51921,51921,27,85,58,79989,2024-11-01,2025-07-30 11:30:00,0
+Photowatt,51921,51921,27,85,58,81709,2024-11-01,2025-07-30 11:30:00,0
+TrinaSolar,51921,51921,27,85,58,79989,2024-11-01,2025-07-30 11:30:00,0

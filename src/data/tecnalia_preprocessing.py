@@ -1,6 +1,7 @@
 from pathlib import Path
 
 import pandas as pd
+import numpy as np
 
 
 TIMESTAMP_COLUMN = "Fecha"
@@ -68,7 +69,7 @@ def convert_tecnalia_sentinels(
     if temperature_column in processed.columns:
         processed[temperature_column] = processed[temperature_column].replace(
             -9999,
-            pd.NA,
+            np.nan,
         )
 
     return processed
