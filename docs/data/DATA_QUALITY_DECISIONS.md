@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This document converts the verified TECNALIA and RaptorMaps audit/EDA findings into explicit data-quality, preprocessing, leakage-control, split, and dataset-independence rules
+This document converts the verified TECNALIA and RaptorMaps audit/EDA findings into explicit data-quality, preprocessing, leakage-control, split, and dataset-independence rules.
 
 Raw datasets remain immutable. These rules apply to future intermediate/processed data pipelines.
 
