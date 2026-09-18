@@ -1,0 +1,121 @@
+module_name,column,total_rows,missing_count,missing_percentage,completely_missing
+Atersa,Fecha,51921,0,0.0,False
+Atersa,Vmpp(V),51921,0,0.0,False
+Atersa,Impp(A),51921,0,0.0,False
+Atersa,Temp. Mod (°C),51921,0,0.0,False
+Atersa,GHI (W/m²),51921,0,0.0,False
+Atersa,DHI (W/m²),51921,51921,100.0,True
+Atersa,DNI (W/m²),51921,51921,100.0,True
+Atersa,Wind Speed (m/s),51921,0,0.0,False
+Atersa,Isc(A),51921,26268,50.59224591205871,False
+Atersa,Voc(A),51921,26268,50.59224591205871,False
+Atersa,FF,51921,26268,50.59224591205871,False
+Atersa,Front GPOA (W/m²),51921,0,0.0,False
+Atersa,Amb. Temp. (°C),51921,0,0.0,False
+Atersa,Pmpp (W),51921,0,0.0,False
+Atersa,Vac(V),51921,51921,100.0,True
+Atersa,Iac(A),51921,51921,100.0,True
+Atersa,Pac(W),51921,51921,100.0,True
+Atersa,Back GPOA (W/m²),51921,51921,100.0,True
+Atersa,SR (Wh/m²),51921,51921,100.0,True
+Atersa,Pressure (mmHg),51921,51921,100.0,True
+Atersa,Humidity(%),51921,51921,100.0,True
+Atersa,Rain Accumulation (mm),51921,51921,100.0,True
+Atersa,Intensity(mm/h),51921,51921,100.0,True
+Atersa,Direction of wind,51921,51921,100.0,True
+JaSolar3,Fecha,51921,0,0.0,False
+JaSolar3,Vmpp(V),51921,0,0.0,False
+JaSolar3,Impp(A),51921,0,0.0,False
+JaSolar3,Temp. Mod (°C),51921,783,1.5080603224128966,False
+JaSolar3,GHI (W/m²),51921,0,0.0,False
+JaSolar3,DHI (W/m²),51921,51921,100.0,True
+JaSolar3,DNI (W/m²),51921,51921,100.0,True
+JaSolar3,Wind Speed (m/s),51921,0,0.0,False
+JaSolar3,Isc(A),51921,26267,50.59031990909266,False
+JaSolar3,Voc(A),51921,26267,50.59031990909266,False
+JaSolar3,FF,51921,26267,50.59031990909266,False
+JaSolar3,Front GPOA (W/m²),51921,0,0.0,False
+JaSolar3,Amb. Temp. (°C),51921,0,0.0,False
+JaSolar3,Pmpp (W),51921,0,0.0,False
+JaSolar3,Vac(V),51921,51921,100.0,True
+JaSolar3,Iac(A),51921,51921,100.0,True
+JaSolar3,Pac(W),51921,51921,100.0,True
+JaSolar3,Back GPOA (W/m²),51921,51921,100.0,True
+JaSolar3,SR (Wh/m²),51921,51921,100.0,True
+JaSolar3,Pressure (mmHg),51921,51921,100.0,True
+JaSolar3,Humidity(%),51921,51921,100.0,True
+JaSolar3,Rain Accumulation (mm),51921,51921,100.0,True
+JaSolar3,Intensity(mm/h),51921,51921,100.0,True
+JaSolar3,Direction of wind,51921,51921,100.0,True
+NingboSolar,Fecha,51921,0,0.0,False
+NingboSolar,Vmpp(V),51921,0,0.0,False
+NingboSolar,Impp(A),51921,0,0.0,False
+NingboSolar,Temp. Mod (°C),51921,0,0.0,False
+NingboSolar,GHI (W/m²),51921,0,0.0,False
+NingboSolar,DHI (W/m²),51921,51921,100.0,True
+NingboSolar,DNI (W/m²),51921,51921,100.0,True
+NingboSolar,Wind Speed (m/s),51921,0,0.0,False
+NingboSolar,Isc(A),51921,26267,50.59031990909266,False
+NingboSolar,Voc(A),51921,26267,50.59031990909266,False
+NingboSolar,FF,51921,26267,50.59031990909266,False
+NingboSolar,Front GPOA (W/m²),51921,0,0.0,False
+NingboSolar,Amb. Temp. (°C),51921,0,0.0,False
+NingboSolar,Pmpp (W),51921,0,0.0,False
+NingboSolar,Vac(V),51921,51921,100.0,True
+NingboSolar,Iac(A),51921,51921,100.0,True
+NingboSolar,Pac(W),51921,51921,100.0,True
+NingboSolar,Back GPOA (W/m²),51921,51921,100.0,True
+NingboSolar,SR (Wh/m²),51921,51921,100.0,True
+NingboSolar,Pressure (mmHg),51921,51921,100.0,True
+NingboSolar,Humidity(%),51921,51921,100.0,True
+NingboSolar,Rain Accumulation (mm),51921,51921,100.0,True
+NingboSolar,Intensity(mm/h),51921,51921,100.0,True
+NingboSolar,Direction of wind,51921,51921,100.0,True
+Photowatt,Fecha,51921,0,0.0,False
+Photowatt,Vmpp(V),51921,130,0.2503803855857938,False
+Photowatt,Impp(A),51921,130,0.2503803855857938,False
+Photowatt,Temp. Mod (°C),51921,0,0.0,False
+Photowatt,GHI (W/m²),51921,0,0.0,False
+Photowatt,DHI (W/m²),51921,51921,100.0,True
+Photowatt,DNI (W/m²),51921,51921,100.0,True
+Photowatt,Wind Speed (m/s),51921,0,0.0,False
+Photowatt,Isc(A),51921,26527,51.09108068026424,False
+Photowatt,Voc(A),51921,26527,51.09108068026424,False
+Photowatt,FF,51921,26527,51.09108068026424,False
+Photowatt,Front GPOA (W/m²),51921,0,0.0,False
+Photowatt,Amb. Temp. (°C),51921,0,0.0,False
+Photowatt,Pmpp (W),51921,130,0.2503803855857938,False
+Photowatt,Vac(V),51921,51921,100.0,True
+Photowatt,Iac(A),51921,51921,100.0,True
+Photowatt,Pac(W),51921,51921,100.0,True
+Photowatt,Back GPOA (W/m²),51921,51921,100.0,True
+Photowatt,SR (Wh/m²),51921,51921,100.0,True
+Photowatt,Pressure (mmHg),51921,51921,100.0,True
+Photowatt,Humidity(%),51921,51921,100.0,True
+Photowatt,Rain Accumulation (mm),51921,51921,100.0,True
+Photowatt,Intensity(mm/h),51921,51921,100.0,True
+Photowatt,Direction of wind,51921,51921,100.0,True
+TrinaSolar,Fecha,51921,0,0.0,False
+TrinaSolar,Vmpp(V),51921,0,0.0,False
+TrinaSolar,Impp(A),51921,0,0.0,False
+TrinaSolar,Temp. Mod (°C),51921,0,0.0,False
+TrinaSolar,GHI (W/m²),51921,0,0.0,False
+TrinaSolar,DHI (W/m²),51921,51921,100.0,True
+TrinaSolar,DNI (W/m²),51921,51921,100.0,True
+TrinaSolar,Wind Speed (m/s),51921,0,0.0,False
+TrinaSolar,Isc(A),51921,26268,50.59224591205871,False
+TrinaSolar,Voc(A),51921,26268,50.59224591205871,False
+TrinaSolar,FF,51921,26268,50.59224591205871,False
+TrinaSolar,Front GPOA (W/m²),51921,0,0.0,False
+TrinaSolar,Amb. Temp. (°C),51921,0,0.0,False
+TrinaSolar,Pmpp (W),51921,0,0.0,False
+TrinaSolar,Vac(V),51921,51921,100.0,True
+TrinaSolar,Iac(A),51921,51921,100.0,True
+TrinaSolar,Pac(W),51921,51921,100.0,True
+TrinaSolar,Back GPOA (W/m²),51921,51921,100.0,True
+TrinaSolar,SR (Wh/m²),51921,51921,100.0,True
+TrinaSolar,Pressure (mmHg),51921,51921,100.0,True
+TrinaSolar,Humidity(%),51921,51921,100.0,True
+TrinaSolar,Rain Accumulation (mm),51921,51921,100.0,True
+TrinaSolar,Intensity(mm/h),51921,51921,100.0,True
+TrinaSolar,Direction of wind,51921,51921,100.0,True

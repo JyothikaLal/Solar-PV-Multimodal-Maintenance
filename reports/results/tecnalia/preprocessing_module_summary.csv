@@ -1,0 +1,6 @@
+module_name,file,rows,columns,timestamp_start,timestamp_end,duplicate_timestamps,timestamp_sorted,infinite_values
+Atersa,data_Atersa.csv,51921,27,2024-11-01,2025-07-30 11:30:00,0,True,0
+JaSolar3,data_JaSolar3.csv,51921,27,2024-11-01,2025-07-30 11:30:00,0,True,0
+NingboSolar,data_NingboSolar.csv,51921,27,2024-11-01,2025-07-30 11:30:00,0,True,0
+Photowatt,data_Photowatt.csv,51921,27,2024-11-01,2025-07-30 11:30:00,0,True,0
+TrinaSolar,data_TrinaSolar.csv,51921,27,2024-11-01,2025-07-30 11:30:00,0,True,0
