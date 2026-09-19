@@ -47,12 +47,19 @@ data/processed/
 # Models
 # ==============================
 
-models/*.pt
-models/*.pth
-models/*.onnx
-models/*.pkl
-models/*.joblib
-models/*.bin
+models/**/*.pt
+models/**/*.pth
+models/**/*.onnx
+models/**/*.pkl
+models/**/*.joblib
+models/**/*.bin
+
+# ==============================
+# Generated experiment artifacts
+# ==============================
+
+# Keep lightweight CSV/JSON experiment results tracked.
+# Large/generated model artifacts remain ignored.
 
 # ==============================
 # Experiment tracking
@@ -103,3 +110,13 @@ htmlcov/
 # Personal task completion documents (kept locally, not committed)
 docs/data/TASK_11_TECNALIA_EDA_COMPLETE_DOCUMENTATION.docx
 docs/data/TASK_12_RAPTORMAPS_EDA_COMPLETE_DOCUMENTATION.docx
+
+# ==============================
+# Large generated experiment artifacts
+# ==============================
+
+reports/results/raptormaps/image_statistics.csv
+reports/results/raptormaps/intensity_features.csv
+reports/results/tecnalia/regression_baselines/test_predictions.csv
+reports/results/tecnalia/regression_baselines/error_analysis/merged_test_predictions_with_conditions.csv
+# Large generated RaptorMaps feature artifacts

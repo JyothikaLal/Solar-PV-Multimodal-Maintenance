@@ -1,0 +1,13 @@
+class_name,precision,recall,f1,support
+Cell,0.0,0.0,0.0,281
+Cell-Multi,0.0,0.0,0.0,193
+Cracking,0.0,0.0,0.0,141
+Diode,0.0,0.0,0.0,224
+Diode-Multi,0.0,0.0,0.0,26
+Hot-Spot,0.0,0.0,0.0,37
+Hot-Spot-Multi,0.0,0.0,0.0,37
+No-Anomaly,0.5005005005005005,1.0,0.66711140760507,1500
+Offline-Module,0.0,0.0,0.0,123
+Shadowing,0.0,0.0,0.0,158
+Soiling,0.0,0.0,0.0,31
+Vegetation,0.0,0.0,0.0,246
