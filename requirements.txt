@@ -5,6 +5,7 @@ scipy
 
 # Classical machine learning
 scikit-learn
+xgboost
 
 # Visualization
 matplotlib

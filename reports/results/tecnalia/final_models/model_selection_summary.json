@@ -1,0 +1,44 @@
+{
+  "task": "Task 21 - Hyperparameter Tuning and Model Selection",
+  "primary_selection_metric": "validation_mae",
+  "selection_direction": "minimize",
+  "selected_model": "gradient_boosting_tuned",
+  "selected_candidate_id": 5,
+  "selected_hyperparameters": {
+    "n_estimators": 400,
+    "learning_rate": 0.03,
+    "max_depth": 3,
+    "min_samples_leaf": 5,
+    "random_state": 42
+  },
+  "validation_results": {
+    "mae": 0.029539,
+    "rmse": 0.061526,
+    "r2": 0.910609,
+    "mape_percent": 12.6667
+  },
+  "final_test_results": {
+    "mae": 0.029967,
+    "rmse": 0.065960,
+    "r2": 0.915243,
+    "mape_percent": 13.261538
+  },
+  "alternative_tuned_model": {
+    "model": "xgboost_tuned",
+    "candidate_id": 0,
+    "validation_results": {
+      "mae": 0.034392,
+      "rmse": 0.061615,
+      "r2": 0.910351,
+      "mape_percent": 12.9253
+    },
+    "final_test_results": {
+      "mae": 0.031234,
+      "rmse": 0.064184,
+      "r2": 0.919746,
+      "mape_percent": 12.975683
+    }
+  },
+  "test_set_usage": "final_evaluation_only",
+  "selection_note": "Gradient Boosting was locked using validation MAE before the test set was evaluated. Test results were not used to change the selection criterion."
+}
