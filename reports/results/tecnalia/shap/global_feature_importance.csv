@@ -1,0 +1,7 @@
+importance_rank,feature,mean_abs_shap
+1,Front GPOA (W/m²),0.19219140222965483
+2,module_name,0.06845759351134062
+3,Temp. Mod (°C),0.01971201606672634
+4,Amb. Temp. (°C),0.01681745947879802
+5,GHI (W/m²),0.005946985004296008
+6,Wind Speed (m/s),0.00450917001450638

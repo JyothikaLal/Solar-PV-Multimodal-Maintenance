@@ -1,0 +1,7 @@
+importance_rank,feature,feature_type,mean_abs_shap,relative_importance_percent
+1,Front GPOA (W/m²),telemetry_environmental,0.19219140222965528,62.473917366801324
+2,module_name,module_identity,0.06845759351134081,22.252889518164228
+3,Temp. Mod (°C),telemetry_environmental,0.019712016066726294,6.407606420469205
+4,Amb. Temp. (°C),telemetry_environmental,0.016817459478797835,5.46669914267283
+5,GHI (W/m²),telemetry_environmental,0.005946985004295995,1.9331325201324072
+6,Wind Speed (m/s),telemetry_environmental,0.004509170014506405,1.4657550317600214

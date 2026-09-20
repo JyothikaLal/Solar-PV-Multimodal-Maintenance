@@ -47,6 +47,10 @@ CONFIG_PATH = (
     OUTPUT_ROOT / "final_model_config.json"
 )
 
+PREDICTIONS_PATH = (
+    OUTPUT_ROOT / "gradient_boosting_test_predictions.csv"
+)
+
 
 def prepare_data() -> pd.DataFrame:
     modules = load_tecnalia_regression_modules(
@@ -355,6 +359,29 @@ def main():
         ),
     }
 
+    gb_prediction_frame = pd.DataFrame(
+        {
+            "module_name": gb_test["module_name"].to_numpy(),
+            "Fecha": gb_test["Fecha"].to_numpy(),
+            "y_true": gb_test["normalized_pmpp"].to_numpy(),
+            "y_pred": gb_predictions,
+        }
+    )
+
+    gb_prediction_frame["residual"] = (
+        gb_prediction_frame["y_true"]
+        - gb_prediction_frame["y_pred"]
+    )
+
+    gb_prediction_frame["model"] = (
+        "gradient_boosting_tuned"
+    )
+
+    gb_prediction_frame.to_csv(
+        PREDICTIONS_PATH,
+        index=False,
+    )
+
     CONFIG_PATH.write_text(
         json.dumps(
             config,
@@ -378,6 +405,10 @@ def main():
 
     print(
         f"Saved: {CONFIG_PATH}"
+    )
+
+    print(
+        f"Saved: {PREDICTIONS_PATH}"
     )
 
 
