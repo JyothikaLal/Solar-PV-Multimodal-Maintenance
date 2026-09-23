@@ -87,3 +87,21 @@ def test_custom_cnn_produces_finite_outputs():
     outputs = model(inputs)
 
     assert torch.isfinite(outputs).all()
+
+
+def test_custom_cnn_parameter_count_is_frozen():
+    model = RaptorMapsCustomCNN()
+
+    total_parameters = sum(
+        parameter.numel()
+        for parameter in model.parameters()
+    )
+
+    trainable_parameters = sum(
+        parameter.numel()
+        for parameter in model.parameters()
+        if parameter.requires_grad
+    )
+
+    assert total_parameters == 94668
+    assert trainable_parameters == 94668

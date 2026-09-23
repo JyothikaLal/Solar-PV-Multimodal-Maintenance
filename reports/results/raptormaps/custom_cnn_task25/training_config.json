@@ -1,0 +1,63 @@
+{
+  "task": "25",
+  "experiment": "custom_cnn_baseline",
+  "seed": 42,
+  "batch_size": 64,
+  "num_workers": 0,
+  "device": "cuda",
+  "class_names": [
+    "Cell",
+    "Cell-Multi",
+    "Cracking",
+    "Diode",
+    "Diode-Multi",
+    "Hot-Spot",
+    "Hot-Spot-Multi",
+    "No-Anomaly",
+    "Offline-Module",
+    "Shadowing",
+    "Soiling",
+    "Vegetation"
+  ],
+  "input_shape": [
+    1,
+    40,
+    24
+  ],
+  "native_resolution": [
+    40,
+    24
+  ],
+  "normalization": {
+    "method": "training_set_standardization",
+    "mean": 0.61973207,
+    "std": 0.15437313
+  },
+  "augmentation": {
+    "enabled": false,
+    "horizontal_flip_probability": 0.5
+  },
+  "class_imbalance": {
+    "strategy": "weighted_cross_entropy",
+    "sampling": "natural"
+  },
+  "model": {
+    "name": "RaptorMapsCustomCNN",
+    "num_classes": 12,
+    "total_parameters": 94668,
+    "trainable_parameters": 94668,
+    "embedding_dimension": 128
+  },
+  "training_config": {
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "max_epochs": 30,
+    "early_stopping_patience": 5,
+    "scheduler_factor": 0.5,
+    "scheduler_patience": 2,
+    "min_learning_rate": 1e-06
+  },
+  "best_checkpoint": "models/raptormaps/custom_cnn_task25/best_model.pt",
+  "best_validation_macro_f1": 0.49317387671992385,
+  "best_epoch": 13
+}

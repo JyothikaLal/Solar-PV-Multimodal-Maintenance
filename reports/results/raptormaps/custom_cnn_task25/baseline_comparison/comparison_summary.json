@@ -1,0 +1,12 @@
+{
+  "task18_result_source": "reports/results/raptormaps/custom_cnn/test_overall_metrics.csv",
+  "task25_result_source": "reports/results/raptormaps/custom_cnn_task25/test_overall_metrics.csv",
+  "task18_macro_f1": 0.4363234052965139,
+  "task25_macro_f1": 0.492170412075358,
+  "macro_f1_delta": 0.05584700677884408,
+  "comparison_note": "Descriptive baseline comparison. Task 18 and Task 25 use the same frozen RaptorMaps split, compact CNN architecture and training configuration. Task 25 uses the finalized Task 24 training-set standardization contract. This comparison is not a formal causal ablation.",
+  "preprocessing_difference": {
+    "task18": "range scaling by 255",
+    "task25": "training-set standardization; mean=0.61973207; std=0.15437313"
+  }
+}

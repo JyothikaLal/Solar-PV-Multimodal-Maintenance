@@ -1,0 +1,2 @@
+total_samples,correct_predictions,incorrect_predictions,error_rate,mean_confidence,mean_correct_confidence,mean_error_confidence,high_confidence_error_count,high_confidence_error_rate
+2999,1962,1037,0.345781927309103,0.5186756349216406,0.5681652736085627,0.4250414294214079,21,0.007002334111370457

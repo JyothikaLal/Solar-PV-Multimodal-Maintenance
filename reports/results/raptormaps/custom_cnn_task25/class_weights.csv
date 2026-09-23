@@ -1,0 +1,13 @@
+class_name,class_index,class_weight
+Cell,0,0.8880426
+Cell-Multi,1,1.2955556
+Cracking,2,1.777439
+Diode,3,1.1115348
+Diode-Multi,4,9.557377
+Hot-Spot,5,6.7011495
+Hot-Spot-Multi,6,6.77907
+No-Anomaly,7,0.16657142
+Offline-Module,8,2.0207973
+Shadowing,9,1.5778079
+Soiling,10,8.153846
+Vegetation,11,1.016565

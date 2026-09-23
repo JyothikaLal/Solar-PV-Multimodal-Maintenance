@@ -2,10 +2,15 @@ from __future__ import annotations
 
 from pathlib import Path
 
-import numpy as np
 import torch
-from PIL import Image
 from torch.utils.data import DataLoader, Dataset
+
+from src.data.raptormaps_augmentation import (
+    RaptorMapsTrainAugmentation,
+)
+from src.data.raptormaps_preprocessing import (
+    load_raptormaps_image,
+)
 
 from src.data.raptormaps_classification import (
     IMAGE_HEIGHT,
@@ -32,6 +37,7 @@ class RaptorMapsTorchDataset(Dataset):
         split: str,
         manifest_path: Path = MANIFEST_PATH,
         image_root: Path = IMAGE_ROOT,
+        transform: object | None = None,
     ) -> None:
         if split not in {
             TRAIN_SPLIT,
@@ -74,6 +80,7 @@ class RaptorMapsTorchDataset(Dataset):
 
         self.manifest = split_manifest
         self.image_root = image_root
+        self.transform = transform
 
     def __len__(self) -> int:
         return len(self.manifest)
@@ -89,30 +96,12 @@ class RaptorMapsTorchDataset(Dataset):
             image_root=self.image_root,
         )
 
-        with Image.open(image_path) as image:
-            image = image.convert("L")
+        tensor = load_raptormaps_image(
+            image_path=image_path,
+        )
 
-            if image.size != (
-                IMAGE_WIDTH,
-                IMAGE_HEIGHT,
-            ):
-                raise ValueError(
-                    "Unexpected image size: "
-                    f"{image.size}. "
-                    f"Expected "
-                    f"({IMAGE_WIDTH}, {IMAGE_HEIGHT})."
-                )
-
-            array = np.asarray(
-                image,
-                dtype=np.float32,
-            )
-
-        array /= 255.0
-
-        tensor = torch.from_numpy(
-            array
-        ).unsqueeze(0)
+        if self.transform is not None:
+            tensor = self.transform(tensor)
 
         label = self.class_to_index[
             row["anomaly_class"]
@@ -131,6 +120,8 @@ def create_raptormaps_dataloaders(
     num_workers: int = 0,
     manifest_path: Path = MANIFEST_PATH,
     image_root: Path = IMAGE_ROOT,
+    use_train_augmentation: bool = False,
+    pin_memory: bool | None = None,
 ) -> tuple[
     DataLoader,
     DataLoader,
@@ -138,22 +129,44 @@ def create_raptormaps_dataloaders(
 ]:
     """Create train, validation and test DataLoaders."""
 
+    if batch_size <= 0:
+        raise ValueError(
+            "batch_size must be greater than 0."
+        )
+
+    if num_workers < 0:
+        raise ValueError(
+            "num_workers must be non-negative."
+        )
+
+    if pin_memory is None:
+        pin_memory = torch.cuda.is_available()
+
+    train_transform = (
+        RaptorMapsTrainAugmentation()
+        if use_train_augmentation
+        else None
+    )
+
     train_dataset = RaptorMapsTorchDataset(
         split=TRAIN_SPLIT,
         manifest_path=manifest_path,
         image_root=image_root,
+        transform=train_transform,
     )
 
     validation_dataset = RaptorMapsTorchDataset(
         split=VALIDATION_SPLIT,
         manifest_path=manifest_path,
         image_root=image_root,
+        transform=None,
     )
 
     test_dataset = RaptorMapsTorchDataset(
         split=TEST_SPLIT,
         manifest_path=manifest_path,
         image_root=image_root,
+        transform=None,
     )
 
     train_loader = DataLoader(
@@ -161,6 +174,8 @@ def create_raptormaps_dataloaders(
         batch_size=batch_size,
         shuffle=True,
         num_workers=num_workers,
+        pin_memory=pin_memory,
+        drop_last=False,
     )
 
     validation_loader = DataLoader(
@@ -168,6 +183,8 @@ def create_raptormaps_dataloaders(
         batch_size=batch_size,
         shuffle=False,
         num_workers=num_workers,
+        pin_memory=pin_memory,
+        drop_last=False,
     )
 
     test_loader = DataLoader(
@@ -175,6 +192,8 @@ def create_raptormaps_dataloaders(
         batch_size=batch_size,
         shuffle=False,
         num_workers=num_workers,
+        pin_memory=pin_memory,
+        drop_last=False,
     )
 
     return (
