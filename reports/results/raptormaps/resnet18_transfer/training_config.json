@@ -1,0 +1,38 @@
+{
+  "model": "resnet18",
+  "pretrained": true,
+  "backbone_frozen": true,
+  "seed": 42,
+  "batch_size": 64,
+  "num_workers": 0,
+  "device": "cuda",
+  "spatial_size": [
+    160,
+    96
+  ],
+  "class_names": [
+    "Cell",
+    "Cell-Multi",
+    "Cracking",
+    "Diode",
+    "Diode-Multi",
+    "Hot-Spot",
+    "Hot-Spot-Multi",
+    "No-Anomaly",
+    "Offline-Module",
+    "Shadowing",
+    "Soiling",
+    "Vegetation"
+  ],
+  "classifier_learning_rate": 0.001,
+  "backbone_learning_rate": 0.0001,
+  "weight_decay": 0.0001,
+  "max_epochs": 30,
+  "early_stopping_patience": 5,
+  "scheduler_factor": 0.5,
+  "scheduler_patience": 2,
+  "min_learning_rate": 1e-06,
+  "best_epoch": 14,
+  "best_validation_macro_f1": 0.46610201594511164,
+  "checkpoint": "models/raptormaps/resnet18_transfer/best_model.pt"
+}

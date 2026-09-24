@@ -1,0 +1,13 @@
+,Cell,Cell-Multi,Cracking,Diode,Diode-Multi,Hot-Spot,Hot-Spot-Multi,No-Anomaly,Offline-Module,Shadowing,Soiling,Vegetation
+Cell,87,24,4,3,1,8,10,44,8,19,8,66
+Cell-Multi,33,60,28,6,2,3,3,12,4,9,9,24
+Cracking,9,16,91,0,0,0,8,0,0,3,7,6
+Diode,5,1,1,138,23,8,3,34,5,4,1,2
+Diode-Multi,0,2,0,5,19,1,0,0,0,0,0,0
+Hot-Spot,1,0,0,1,0,17,6,9,1,1,0,1
+Hot-Spot-Multi,1,0,0,0,0,10,24,0,0,1,0,1
+No-Anomaly,37,6,4,32,10,54,79,1077,70,88,2,41
+Offline-Module,5,0,2,5,2,3,17,28,51,3,0,7
+Shadowing,5,3,6,1,1,2,7,29,5,92,1,7
+Soiling,6,2,6,0,0,0,2,2,0,1,11,0
+Vegetation,13,12,7,1,0,1,11,18,6,17,6,154

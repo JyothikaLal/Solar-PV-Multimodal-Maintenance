@@ -1,0 +1,13 @@
+sample_index,true_index,predicted_index,true_class,predicted_class,confidence,correct,target_layer,heatmap_height,heatmap_width,heatmap_min,heatmap_max,heatmap_mean
+0,7,7,No-Anomaly,No-Anomaly,0.5156649351119995,True,backbone.features[8][0],40,24,0.0,0.9925746917724609,0.5291388630867004
+1,7,0,No-Anomaly,Cell,0.4006916284561157,False,backbone.features[8][0],40,24,0.0,0.9895564913749695,0.21375177800655365
+2,0,7,Cell,No-Anomaly,0.477862149477005,False,backbone.features[8][0],40,24,0.0,0.0,0.0
+3,0,7,Cell,No-Anomaly,0.35135629773139954,False,backbone.features[8][0],40,24,0.0,1.0,0.25514644384384155
+4,7,7,No-Anomaly,No-Anomaly,0.48546117544174194,True,backbone.features[8][0],40,24,0.0,1.0,0.07419893890619278
+5,7,7,No-Anomaly,No-Anomaly,0.5990684032440186,True,backbone.features[8][0],40,24,0.0,1.0,0.19329026341438293
+6,7,7,No-Anomaly,No-Anomaly,0.6471872925758362,True,backbone.features[8][0],40,24,0.0,0.9960246682167053,0.16681276261806488
+7,7,7,No-Anomaly,No-Anomaly,0.46034714579582214,True,backbone.features[8][0],40,24,0.0,0.986929714679718,0.3318527936935425
+8,7,7,No-Anomaly,No-Anomaly,0.7916464805603027,True,backbone.features[8][0],40,24,0.010076504200696945,0.9973971843719482,0.486007422208786
+9,7,8,No-Anomaly,Offline-Module,0.32366544008255005,False,backbone.features[8][0],40,24,0.0,0.0,0.0
+10,5,11,Hot-Spot,Vegetation,0.31952497363090515,False,backbone.features[8][0],40,24,0.0,1.0,0.6370315551757812
+11,5,5,Hot-Spot,Hot-Spot,0.25996729731559753,True,backbone.features[8][0],40,24,0.0,0.0,0.0
