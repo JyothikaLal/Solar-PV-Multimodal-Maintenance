@@ -1,0 +1,17 @@
+model,sample_index,true_index,true_class,predicted_index,predicted_class,confidence,correct,selection_reason
+efficientnet_b0_finetune,2754,4,Diode-Multi,4,Diode-Multi,0.9999967813491821,True,highest_confidence_correct
+efficientnet_b0_finetune,1745,4,Diode-Multi,3,Diode,0.9743050932884216,False,highest_confidence_error
+efficientnet_b0_finetune,2063,5,Hot-Spot,5,Hot-Spot,0.9892399311065674,True,highest_confidence_correct
+efficientnet_b0_finetune,161,5,Hot-Spot,3,Diode,0.911475419998169,False,highest_confidence_error
+efficientnet_b0_finetune,40,6,Hot-Spot-Multi,6,Hot-Spot-Multi,0.9790591597557068,True,highest_confidence_correct
+efficientnet_b0_finetune,1774,6,Hot-Spot-Multi,9,Shadowing,0.9922637939453125,False,highest_confidence_error
+efficientnet_b0_finetune,2568,10,Soiling,10,Soiling,0.9980530738830566,True,highest_confidence_correct
+efficientnet_b0_finetune,361,10,Soiling,2,Cracking,0.9890797734260559,False,highest_confidence_error
+resnet18_finetune,2097,4,Diode-Multi,4,Diode-Multi,1.0,True,highest_confidence_correct
+resnet18_finetune,1745,4,Diode-Multi,3,Diode,0.9980224370956421,False,highest_confidence_error
+resnet18_finetune,2066,5,Hot-Spot,5,Hot-Spot,0.9999791383743286,True,highest_confidence_correct
+resnet18_finetune,1951,5,Hot-Spot,7,No-Anomaly,0.9999617338180542,False,highest_confidence_error
+resnet18_finetune,1453,6,Hot-Spot-Multi,6,Hot-Spot-Multi,0.9999980926513672,True,highest_confidence_correct
+resnet18_finetune,624,6,Hot-Spot-Multi,5,Hot-Spot,0.9999790191650391,False,highest_confidence_error
+resnet18_finetune,2270,10,Soiling,10,Soiling,0.9999988079071045,True,highest_confidence_correct
+resnet18_finetune,361,10,Soiling,2,Cracking,1.0,False,highest_confidence_error
