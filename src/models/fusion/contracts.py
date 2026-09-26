@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Annotated
+from typing import Annotated, Literal
 
 from pydantic import BaseModel, ConfigDict, Field, field_validator, model_validator
 
@@ -158,3 +158,46 @@ class FusionInput(BaseModel):
                 )
 
         return value
+
+class FusionOutput(BaseModel):
+    """
+    Evidence-preserving output from decision-level fusion.
+
+    The telemetry and thermal branches remain independently generated.
+    This output does not create a shared training label, health score,
+    maintenance priority, or cross-modal probability.
+    """
+
+    model_config = ConfigDict(extra="forbid")
+
+    telemetry: TelemetryPrediction
+    thermal: ThermalPrediction
+    thermal_anomaly_detected: bool
+    evidence_state: Literal[
+        "no_thermal_anomaly",
+        "thermal_anomaly_detected",
+    ]
+    embedding_indicators: dict[str, float] | None = None
+
+    @model_validator(mode="after")
+    def validate_evidence_state(self) -> "FusionOutput":
+        expected_anomaly = self.thermal.anomaly_class != "No-Anomaly"
+
+        if self.thermal_anomaly_detected != expected_anomaly:
+            raise ValueError(
+                "thermal_anomaly_detected must match whether "
+                "thermal.anomaly_class is 'No-Anomaly'."
+            )
+
+        expected_state = (
+            "thermal_anomaly_detected"
+            if expected_anomaly
+            else "no_thermal_anomaly"
+        )
+
+        if self.evidence_state != expected_state:
+            raise ValueError(
+                "evidence_state must match the thermal anomaly state."
+            )
+
+        return self
