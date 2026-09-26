@@ -1,0 +1,2 @@
+model,checkpoint_epoch,best_validation_macro_f1,n,accuracy,mean_confidence,median_confidence,mean_no_anomaly_probability,mean_anomaly_evidence,q50_anomaly_evidence,q75_anomaly_evidence,q90_anomaly_evidence,q95_anomaly_evidence,q99_anomaly_evidence
+resnet18_finetuned,14,0.6507379837195436,2997,0.7977977977977978,0.9206762313842773,0.9956401586532593,0.5116800665855408,0.488319993019104,0.34704703092575073,0.9999091625213623,0.9999995827674866,1.0,1.0

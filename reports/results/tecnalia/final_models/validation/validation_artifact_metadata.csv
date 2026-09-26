@@ -1,0 +1,2 @@
+model,candidate_id,n_estimators,learning_rate,max_depth,min_samples_leaf,feature_count,numeric_feature_count,categorical_feature_count,training_rows,validation_rows,split_source,selection_rule
+gradient_boosting_tuned,5,400,0.03,3,5,6,5,1,32430,14530,frozen TECNALIA split manifest,Validation MAE; model already locked before test evaluation
