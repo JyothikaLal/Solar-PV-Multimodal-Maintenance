@@ -120,3 +120,6 @@ reports/results/raptormaps/intensity_features.csv
 reports/results/tecnalia/regression_baselines/test_predictions.csv
 reports/results/tecnalia/regression_baselines/error_analysis/merged_test_predictions_with_conditions.csv
 # Large generated RaptorMaps feature artifacts
+
+# MLflow local tracking database
+mlflow.db
