@@ -123,3 +123,4 @@ reports/results/tecnalia/regression_baselines/error_analysis/merged_test_predict
 
 # MLflow local tracking database
 mlflow.db
+inference_logs.db

@@ -1,0 +1,38 @@
+[
+  {
+    "model_family": "resnet18",
+    "registered_model_name": "SolarPV_RaptorMaps_ResNet18",
+    "version": 1,
+    "run_id": "92c89c957a4549a8b929c73010cd8e73",
+    "model_uri": "runs:/92c89c957a4549a8b929c73010cd8e73/raptormaps_model",
+    "lifecycle_stage": "candidate",
+    "verification": {
+      "checkpoint": "/home/jyothika/projects/Solar_PV_Multimodal_Maintenance/models/raptormaps/resnet18_finetune/best_model.pt",
+      "epoch": 14,
+      "best_validation_macro_f1": 0.6507379837195436,
+      "state_dict_keys": 124,
+      "output_shape": [
+        2,
+        12
+      ]
+    }
+  },
+  {
+    "model_family": "efficientnet_b0",
+    "registered_model_name": "SolarPV_RaptorMaps_EfficientNetB0",
+    "version": 1,
+    "run_id": "d8b73709a47f4c6f967f6d4e812bebec",
+    "model_uri": "runs:/d8b73709a47f4c6f967f6d4e812bebec/raptormaps_model",
+    "lifecycle_stage": "candidate",
+    "verification": {
+      "checkpoint": "/home/jyothika/projects/Solar_PV_Multimodal_Maintenance/models/raptormaps/efficientnet_b0_finetune/best_model.pt",
+      "epoch": 17,
+      "best_validation_macro_f1": 0.5832767374402924,
+      "state_dict_keys": 362,
+      "output_shape": [
+        2,
+        12
+      ]
+    }
+  }
+]
