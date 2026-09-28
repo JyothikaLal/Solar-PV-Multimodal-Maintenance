@@ -1,0 +1,2 @@
+model_name,reference_split,reference_count,sample_count,embedding_dimension,centroid_norm,distance_mean,distance_std,distance_min,distance_p01,distance_p05,distance_p25,distance_median,distance_p75,distance_p95,distance_p99,distance_max
+resnet18_finetuned,train,13992,10000,512,20.257900163829017,21.110829362279436,4.944504956396092,12.380727976761724,14.140865744200292,15.16243208141114,17.3745436821727,20.048006546137056,23.835508060852003,30.17764946791725,36.106245836862236,74.84155755328932

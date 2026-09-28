@@ -1,0 +1,2 @@
+model_name,reference_split,reference_count,sample_count,embedding_dimension,centroid_norm,distance_mean,distance_std,distance_min,distance_p01,distance_p05,distance_p25,distance_median,distance_p75,distance_p95,distance_p99,distance_max
+efficientnet_b0_finetuned,train,13992,10000,1280,5.100716794034859,17.249871229593708,4.381430341660139,9.357858550101684,10.572700697758044,11.563261245395912,13.937515685785149,16.483777103481458,19.742342103377784,25.425350491169425,30.580636081426363,42.40690801923465
