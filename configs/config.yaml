@@ -7,14 +7,31 @@ data:
     raw_dir: data/raw/tecnalia
     interim_dir: data/interim/tecnalia
     processed_dir: data/processed/tecnalia
+    split_manifest: reports/results/tecnalia/tecnalia_split_manifest.csv
 
   raptormaps:
     raw_dir: data/raw/raptormaps
     interim_dir: data/interim/raptormaps
     processed_dir: data/processed/raptormaps
+    split_manifest: reports/results/raptormaps/raptormaps_split_manifest.csv
 
 reproducibility:
   seed: 42
 
 runtime:
   device: auto
+
+mlflow:
+  tracking_uri: sqlite:///mlflow.db
+
+retraining:
+  dry_run: false
+  register_candidate: true
+  allow_promotion: false
+
+  tecnalia:
+    model_family: gradient_boosting_tuned
+
+  raptormaps:
+    resnet18_model_family: resnet18_finetuned
+    efficientnet_b0_model_family: efficientnet_b0_finetuned
