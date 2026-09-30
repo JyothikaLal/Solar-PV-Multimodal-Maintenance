@@ -29,68 +29,61 @@ ENV/
 # ==============================
 
 .ipynb_checkpoints/
+notebooks/
 
 # ==============================
-# Data
+# Data, docs, generated outputs, and local experiments
 # ==============================
 
-data/raw/
-data/interim/
-data/processed/
+docs/
+data/
+mlruns/
+mlartifacts/
+models/
+reports/
 
-# Keep directory structure placeholders
+# Keep lightweight data placeholders only if needed
+!data/.gitkeep
 !data/raw/.gitkeep
 !data/interim/.gitkeep
 !data/processed/.gitkeep
 
 # ==============================
-# Models
+# Model / feature artifacts
 # ==============================
 
-models/**/*.pt
-models/**/*.pth
-models/**/*.onnx
-models/**/*.pkl
-models/**/*.joblib
-models/**/*.bin
+*.pt
+*.pth
+*.onnx
+*.pkl
+*.joblib
+*.bin
+*.h5
+*.hdf5
 
 # ==============================
-# Generated experiment artifacts
+# Local DBs / logs
 # ==============================
 
-# Keep lightweight CSV/JSON experiment results tracked.
-# Large/generated model artifacts remain ignored.
-
-# ==============================
-# Experiment tracking
-# ==============================
-
-mlruns/
-mlartifacts/
-
-# ==============================
-# Logs
-# ==============================
-
+*.db
+*.sqlite
+*.sqlite3
 *.log
 logs/
+mlflow.db
+inference_logs.db
 
 # ==============================
-# OS files
+# OS files / editor files
 # ==============================
 
 .DS_Store
 Thumbs.db
-
-# ==============================
-# IDE
-# ==============================
-
 .vscode/
 .idea/
 
 # ==============================
-# Python tooling
+# Python tooling caches
 # ==============================
 
 .pytest_cache/
@@ -106,21 +99,25 @@ htmlcov/
 *.tmp
 *.temp
 *.swp
-
-# Personal task completion documents (kept locally, not committed)
-docs/data/TASK_11_TECNALIA_EDA_COMPLETE_DOCUMENTATION.docx
-docs/data/TASK_12_RAPTORMAPS_EDA_COMPLETE_DOCUMENTATION.docx
+*.bak
 
 # ==============================
-# Large generated experiment artifacts
+# Large / external documents to keep local only
 # ==============================
 
-reports/results/raptormaps/image_statistics.csv
-reports/results/raptormaps/intensity_features.csv
-reports/results/tecnalia/regression_baselines/test_predictions.csv
-reports/results/tecnalia/regression_baselines/error_analysis/merged_test_predictions_with_conditions.csv
-# Large generated RaptorMaps feature artifacts
+*.docx
+*.pdf
+*.zip
+*.tar
+*.gz
+*.rar
+*.7z
 
-# MLflow local tracking database
-mlflow.db
-inference_logs.db
+**/TASK_*DOCUMENTATION*.docx
+**/*_COMPLETE*.docx
+
+# ==============================
+# Project-specific local artifacts
+# ==============================
+
+# Keep only source code, config, and deployment files in GitHub.

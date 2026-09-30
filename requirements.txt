@@ -34,6 +34,10 @@ fastapi
 uvicorn[standard]
 pydantic
 pydantic-settings
+httpx
+python-multipart
+prometheus-client
+streamlit
 
 # Experiment tracking / MLOps
 mlflow
