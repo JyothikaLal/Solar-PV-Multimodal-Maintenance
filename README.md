@@ -247,7 +247,3 @@ Telemetry model performance from the project training run:
 - health output is a decision-support signal, not a calibrated physical health percentage
 - thermal classes can be imbalanced and harder to separate in practice
 - scripts rely on the repository root being correctly configured for Python imports
-
-## Resume-ready summary
-
-This project develops an end-to-end photovoltaic predictive maintenance platform that combines telemetry regression and thermal anomaly detection into a unified decision-support system. It preprocesses PV performance data, trains classical and deep learning models, fuses their outputs at the decision layer, and exposes results through a FastAPI API and dashboard. The system integrates MLflow tracking, deployment orchestration, Prometheus monitoring, and Grafana visualization for operational review.
